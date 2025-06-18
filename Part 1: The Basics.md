@@ -29,11 +29,24 @@ print(False)
 `False`
 
 ### General Syntax:
-`print(\*objects, sep=' ', end='\n', file=sys.stdout, flush=False)`
+```bash
+print(\*objects, sep=' ', end='\n', file=sys.stdout, flush=False)`
+```
+
+| Parameter  | Description                                      | Default          |
+| ---------- | ------------------------------------------------ | ---------------- |
+| `*objects` | One or more objects to print (comma-separated)   | Required         |
+| `sep`      | String inserted between objects                  | `' '` (space)    |
+| `end`      | String appended after the last object            | `'\n'` (newline) |
+| `file`     | A file-like object (stream) where output is sent | `sys.stdout`     |
+| `flush`    | If `True`, forcibly flush the output buffer      | `False`          |
+
 
 ```bash
-
+#Basic print
+print("Hello", "World") 
 ```
+`Hello World`
 
 ```bash
 ```
