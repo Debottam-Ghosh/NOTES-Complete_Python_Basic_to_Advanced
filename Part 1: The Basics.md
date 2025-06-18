@@ -28,6 +28,8 @@ print(False)
 `11`
 `False`
 
+---
+
 ### General Syntax:
 ```bash
 print(\*objects, sep=' ', end='\n', file=sys.stdout, flush=False)`
@@ -49,12 +51,21 @@ print("Hello", "World")
 `Hello World`
 
 ```bash
+#Custom Separator
+print("2025", "06", "03", sep="-")
 ```
+`2025-06-03`
 
 ```bash
+#Custom End
+print("Loading...", end=' ')
+print("100%")
 ```
+`Loading... 100%`
 
 ```bash
+#printing to a file
+print("print this to a file", file=open("output.txt","w"))
 ```
 
 ```bash
