@@ -1,8 +1,6 @@
 ## Definition
 In python, we can convert a datatype to some other datatype very easily **until it is valid**
 
----
-
 #### We can easily change the datatype of `5` from `int` to `str`
 ```bash
 # First store x as int
