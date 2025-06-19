@@ -30,7 +30,7 @@ class Student: ...     # 'Student' is an identifier
 - Cannot be a Python keyword
 - Case-sensitive (`Name ≠ name`)
 
-| ✅ **Valid Identifiers** | ❌ **Invalid Identifiers** |
+| **Valid Identifiers**   | **Invalid Identifiers**   |
 | ----------------------- | ------------------------- |
 | `name`                  | `1name`                   |
 | `user_name`             | `user-name`               |
@@ -43,6 +43,5 @@ class Student: ...     # 'Student' is an identifier
 | `value2temp`            | `import*`                 |
 
 
-- 
 
 
