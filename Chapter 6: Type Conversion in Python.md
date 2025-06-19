@@ -90,6 +90,7 @@ Num_2 = input("Enter the 2nd number: ")
 print(Num_1 + Num_2)
 ```
 `Enter 1st number: ____________5_______________`
+<br>
 `Enter 2nd number: ____________6_______________`
 Output: `56`
 
@@ -100,6 +101,7 @@ Num_2 = int(input("Enter the 2nd number: "))
 print(Num_1 + Num_2)
 ```
 `Enter 1st number: ____________5_______________`
+<br>
 `Enter 2nd number: ____________6_______________`
 Output: `11`
 
