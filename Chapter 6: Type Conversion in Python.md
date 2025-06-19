@@ -92,6 +92,7 @@ print(Num_1 + Num_2)
 `Enter 1st number: ____________5͟_______________`
 <br>
 `Enter 2nd number: ____________6_______________`
+<br>
 Output: `56`
 
 #### To fix this, we have to convert the datatype to `int`
@@ -103,6 +104,7 @@ print(Num_1 + Num_2)
 `Enter 1st number: ____________5_______________`
 <br>
 `Enter 2nd number: ____________6_______________`
+<br>
 Output: `11`
 
 
