@@ -1,9 +1,9 @@
-## Definition of print() in Python:
+## Definition of print() in Python
 The print() function in Python is a built-in function used to output data to the console (standard output).
 
 ---
 
-### Examples:
+## Examples
 ```bash
 #print a string
 print("I am learning python")
@@ -34,7 +34,7 @@ print(False)
 
 ---
 
-### General Syntax:
+## General Syntax:
 ```bash
 print(\*objects, sep=' ', end='\n', file=sys.stdout, flush=False)`
 ```
@@ -74,7 +74,7 @@ print("print this to a file", file=open("output.txt","w"))
 
 ---
 
-### **Force Flush=True**
+## **Force Flush=True**
 ```bash
 # Without flush=True
 import time
