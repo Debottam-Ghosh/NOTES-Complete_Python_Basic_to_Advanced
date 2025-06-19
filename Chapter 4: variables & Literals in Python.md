@@ -1,7 +1,5 @@
 ## Variables
-Variables are used to store data and we declare a varible when we don't know what the value will be in future or we want our users to give inputs. <br> Python variables has two important features:
-
----
+Variables are used to store data and we declare a varible when we don't know what the value will be in future or we want our users to give inputs.
 
 ## Important Features of Python Variables
 
