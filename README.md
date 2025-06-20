@@ -66,7 +66,7 @@ This repository includes hand-crafted notes covering the following major topics:
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/yourusername/complete-python-notes.git
+   git clone https://github.com/yourusername/Complete-Python-Notes-Basic-to-Advanced.git
     ```
 
 2. Browse through the folders and start with the section you need.
