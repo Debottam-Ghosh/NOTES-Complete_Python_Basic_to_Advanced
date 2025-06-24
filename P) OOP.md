@@ -319,3 +319,160 @@ a.bark()
 `Animal speaks`
 `Dog barks`
 
+###
+**Note on Inheritance:**
+1. If a method (constructor or any other) is defined for the `parent` class but not for the `child` class, then the `child` class can use the `parent` class's
+2. **Method Overriding:** If a same-named method is defined for both `child` and `parent` classes with different parameters and functionalities, the `child`s will prevail.
+###
+```bash
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
+
+a = Dog()
+a.speak()  # Output: Dog barks (NOT Animal speaks)
+```
+`Dog barks` (NOT Animal speaks because of method overriding)
+Method Overriding is a type of **Polymorphism**. There are two more types of Polymorphism in general:
+1. Operator Overloding and <br> 2. Method Overloading (*doesn't exist for python but you can mimic the functionality by using default argumemt feature*)
+
+#
+
+## Types of Inheritance
+There are six common types of inheritance. These are as follows:
+![image](https://github.com/user-attachments/assets/4dbcf6a0-37e7-4696-ab54-885d038e9d2c)
+
+### 1. Single Inheritance
+- A subclass inherits from one superclass.
+```bash
+  class Parent:
+    def show(self):
+        print("Parent")
+
+class Child(Parent):
+    pass
+
+obj = Child()
+obj.show()
+```
+`Parent`
+###
+### Multilevel Inheritance
+- A class inherits from a child class which is already derived from a parent class.
+
+ ```bash
+ class Grandparent:
+    def show1(self):
+        print("Grandparent_1")   
+    
+class Parent(Grandparent):
+    def show2(self):
+        print("Parent_2")
+
+class Child(Parent):
+    def show3(self):
+        print("Child_3")
+
+obj = Child()
+obj.show3()
+obj.show2()
+obj.show1()
+```
+`Child_3`
+`Parent_2`
+`Grandparent_1`
+
+### 
+### 3. Multiple Inheritance
+- A class inherits from more than one parent class.
+```bash
+ class A:
+    def show(self):
+        print("A")
+
+class B:
+    def show(self):
+        print("B")
+
+class C(A, B):
+    pass
+
+obj = C()
+obj.show()  # Resolves to A due to Method Resolution Order (MRO) 
+```
+`A`
+**MRO** or Method Resolution Order is the order in which Python checks classes to find a method or attribute when using inheritance, especially when a class inherits from multiple classes.<br>
+Basically, it executes the method that is first defined as the parent.
+###
+### 4. Hierarchical Inheritance
+- Multiple child classes inherit from a single parent class.
+
+```bash
+class Parent:
+    def show(self):
+        print("Parent")
+
+class Child1(Parent):
+    pass
+
+class Child2(Parent):
+    pass
+
+c1=Child1()
+c2=Child2()
+
+c1.show()
+c2.show()
+```
+`Parent`
+`Parent`
+###
+### 5. Hybrid Inheritance
+- A combination of two or more types of inheritance.
+```bash
+     class A:
+    def show(self):
+        print("A")
+
+class B(A):
+    def show(self):
+        print("B")
+
+class C:
+    def show(self):
+        print("C")
+
+class D(B, C):
+    pass
+
+obj = D()
+obj.show()  # Depends on MRO
+```
+`B`
+###
+## Super() Keyword
+- The `super()` keyword in OOP, is used to call methods or constructors from a parent in a child.
+- It must be the called at the first line of of child function
+###
+### **Example:**
+```bash
+class Animal:
+    def __init__(self, name):
+        self.name = name
+        print(f"Animal created: {self.name}")
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)  # Call the parent class constructor
+        self.breed = breed
+        print(f"Dog created: {self.name}, Breed: {self.breed}")
+        
+D=Dog('Bruno', 'Labrador')
+```
+`Animal created: Bruno`
+`Dog created: Bruno, Breed: Labrador`
+
