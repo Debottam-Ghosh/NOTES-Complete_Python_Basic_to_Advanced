@@ -279,7 +279,6 @@ print(obj._MyClass__secret)   # Outputs: Hidden Info
 ## Types of Class Relationships
 ### 1. Aggregation (HAS-A)
 - One class contains another class as a part.
-- Represents: A "has-a" relationship.
 ```bash
 class Engine:
     def start(self):
@@ -299,5 +298,24 @@ c.drive()
 <br>
 `Car drives`
 
+###
+### 2. Inheritance (IS-A)
+- One class inherits properties and behaviors from another.
+- When defining the child class, use `child`(`parent`).
 
+```bash
+class Animal:
+    def speak(self):
+        print("Animal speaks")
+
+class Dog(Animal):  # Dog IS-A Animal
+    def bark(self):
+        print("Dog barks")
+
+a=Dog()
+a.speak()
+a.bark()
+```
+`Animal speaks`
+`Dog barks`
 
