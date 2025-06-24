@@ -1,9 +1,4 @@
-
-<center>
-  
 # Chapter 1. Print() Function
-
-</center>
 
 <br>
 <br>
