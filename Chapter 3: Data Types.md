@@ -1,3 +1,8 @@
+# Chapter 3: Data Types
+
+<br>
+<br>
+
 ## Definition
 A data type defines the kind of value a variable holds. Python is **dynamically typed**, so you don’t need to declare types explicitly. 
 
