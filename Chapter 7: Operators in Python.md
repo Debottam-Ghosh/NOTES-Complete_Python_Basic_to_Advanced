@@ -1,3 +1,8 @@
+# Chapter 7: Operators in Python
+
+<br>
+<br>
+
 In python programming language, there are 7 different operators. 
 ## **1. Arithmetic Operators**
 #### Used for numeric calculations:
