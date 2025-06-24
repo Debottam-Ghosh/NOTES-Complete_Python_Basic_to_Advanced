@@ -70,3 +70,140 @@ Used to iterate over **sequences**. <br> Example of Sequences:
 for item in sequence:
     # code block
 ```
+
+
+### Simple Examples
+```
+for i in range(7):
+    print(i,end=" ")
+```
+`0 1 2 3 4 5 6 `
+
+```
+for i in 'Python':
+    print(i,end=" ")
+```
+`P y t h o n`
+
+```
+for i in (3,5,7,10):
+    print(i,end=" ")
+```
+`3 5 7 10`
+
+```
+for i in [1,3,9]:
+    print(i,end=" ")
+```
+1 3 9 
+
+---
+
+## Loop Control Statements
+| Statement  | Meaning                   | Example Use               |
+| ---------- | ------------------------- | ------------------------- |
+| `break`    | Exit the loop immediately | `if i == 3: break`        |
+| `continue` | Skip to next iteration    | `if i % 2 == 0: continue` |
+| `pass`     | Do nothing (placeholder)  | `if i == 2: pass`         |
+
+### 1. `break` — Exit the loop completely
+- Used to terminate a loop when a condition is met.
+- It immediately exits the loop, even if the loop condition is still True.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example:**
+```bash
+for i in range(5):
+    if i == 3:
+        break
+    print(i, end=' ' )
+```
+ **Output:** `0 1 2` (Stops the loop when i == 3)
+
+ <br>
+
+ ### 2. `continue` — Skip the current iteration
+- Skips the current loop iteration and jumps to the next one.
+- The loop doesn’t stop, just avoids executing the rest of the code for that iteration.
+
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example:**
+```bash
+for i in range(5):
+    if i == 3:
+        continue
+    print(i, end=' ' )
+```
+**Output:** `0 1 2 4 5` (Skips printing for i == 3)
+
+<br> 
+
+### 3. `pass` — Do nothing (placeholder)
+- It’s a null statement — does nothing at all..
+- Used as a placeholder for code you’ll write later (like inside an empty function, loop, or condition).
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Example:**
+```bash
+for i in range(5):
+    if i == 3:
+        pass
+    print(i, end=' ' )
+```
+**Output:** `0 1 2 3 4 5` (Just passed i == 3, doing nothing)
+
+<br>
+
+### **Examples with `break`,`continue`,`pass`**
+```
+for i in range(10,20):
+    print('\n',i, end=' ')
+    if(i==13):
+        continue
+        print('- continue',end=' ')
+    elif(i==16):
+        pass
+        print('- pass',end=' ')
+    elif(i==19):
+        break
+        print('- break',end=' ')
+```
+**Output:**
+ 10 
+ 11 
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 - pass 
+ 17 
+ 18 
+ 19 
+**Explanation:**
+- At `i==13`, printing is skipped as `continue` skips everything after it for that iteration.
+- At `i==16`, printing happened as `pass` does nothing
+- At `i==19`, the loop breaks due to `break`
+
+---
+
+## Nested Loop for Pattern Printing
+Nested loops are often used to print patterns like this:
+```bash
+*
+**
+***
+****
+*****
+```
+The code to print the above pattern is:
+```bash
+# number of rows:
+n = 5    #One can also take input from the user
+
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print("\n")
+```
+
+### When to use a `for` loop and when to use a `while` loop?
+Use `for` loop when you have a clear idea about how many times the loop will be iterated. On the other hand, use a `while` loop when you don't know how many times the loop will be iterated, but all you know is a condition that needs to be satisfied to continue the loop
+
+
+
