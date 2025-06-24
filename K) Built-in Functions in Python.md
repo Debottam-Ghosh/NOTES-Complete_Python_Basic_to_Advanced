@@ -20,6 +20,8 @@
 | `enumerate()` | Get index and value in a loop  | `enumerate(['a','b'])` | `(0, 'a')` |
 | `zip()`       | Combine iterables element-wise | `zip([1,2],[3,4])`     | `(1,3)...` |
 
+<br>
+
 ## **Math & Logic**
 | Function  | Purpose                     | Example           | Output |
 | --------- | --------------------------- | ----------------- | ------ |
@@ -29,6 +31,7 @@
 | `min()`   | Smallest value              | `min(1, 5, -2)`   | `-2`   |
 | `max()`   | Largest value               | `max(1, 5, -2)`   | `5`    |
 | `sum()`   | Sum of elements in **iterable** | `sum([1, 2, 3])`  | `6`    |
+
 <br>
 
 ## **Data Structure Utilities**
@@ -40,7 +43,9 @@
 | `list()`     | Convert to list          | `list("abc")`           | `['a','b','c']` |
 | `set()`      | Convert to set (unique)  | `set([1,1,2])`          | `{1,2}`         |
 | `dict()`     | Create dictionary        | `dict(a=1, b=2)`        | `{'a':1,'b':2}` |
+
 <br>
+
 ## **Evaluation and Introspection**
 | Function       | Purpose                       | Example              | Output            |
 | -------------- | ----------------------------- | -------------------- | ----------------- |
@@ -49,7 +54,9 @@
 | `isinstance()` | Check object type             | `isinstance(3, int)` | `True`            |
 | `eval()`       | Evaluate string as expression | `eval("2+3")`        | `5`               |
 | `input()`      | Get user input                | `input("Name: ")`    | (user input)      |
+
 <br>
+
 ## **Others**
 | Function  | Purpose                          | Example            |
 | --------- | -------------------------------- | ------------------ |
