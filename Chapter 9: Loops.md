@@ -3,7 +3,7 @@ Loops are used to repeat a block of code multiple times.
 
 ## Types of Loops
 There are two types of loops in python:
-#### 1. `While` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. `For`
+**1. `While`** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **2. `For`**
 
 ---
 
@@ -50,4 +50,23 @@ LET'S LEARN THE TABLE OF 5 TODAY!
 5 * 8 = 40
 5 * 9 = 45
 5 * 10 = 50
+```
+
+---
+## For Loop
+Used to iterate over **sequences**. <br> Example of Sequences:
+#### 1. Range function
+- `range(6)`: 0,1,2,3,4,5 &nbsp;&nbsp;&nbsp;(starts from 0 by default)
+- `range(3,8)`: 3,4,5,6,7
+- `range(5,16,3)`: 5,8,11,14
+#### 2. String
+#### 3. List
+#### 4. Tuple
+#### 5. Sets
+#### 6. Dictionary
+
+### **Syntax:**
+```bash
+for item in sequence:
+    # code block
 ```
