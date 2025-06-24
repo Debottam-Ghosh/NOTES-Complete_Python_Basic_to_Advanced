@@ -1,6 +1,7 @@
 # Chapter 1. Print() Function
 <br>
 <br>
+
 ## Definition of `print()` in Python
 The print() function in Python is a built-in function used to output data to the console (standard output).
 
