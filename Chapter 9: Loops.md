@@ -3,7 +3,9 @@ Loops are used to repeat a block of code multiple times.
 
 ## Types of Loops
 There are two types of loops in python:
-**1. `While`** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **2. `For`**
+**1. While** 
+<br>
+**2. For**
 
 ---
 
@@ -23,7 +25,9 @@ while x > 0:
     x -= 1
 ```
 `3`
+<br>
 `2`
+<br>
 `1`
 
 ### Making Table of any number using while loop
@@ -73,6 +77,8 @@ for item in sequence:
 
 
 ### Simple Examples
+<br>
+
 **1. Range Function:**
 ```
 for i in range(7):
@@ -109,6 +115,8 @@ for i in [1,3,9]:
 | `break`    | Exit the loop immediately | `if i == 3: break`        |
 | `continue` | Skip to next iteration    | `if i % 2 == 0: continue` |
 | `pass`     | Do nothing (placeholder)  | `if i == 2: pass`         |
+
+<br>
 
 ### 1. `break` — Exit the loop completely
 - Used to terminate a loop when a condition is met.
@@ -205,6 +213,8 @@ for i in range(1,n+1):
         print("*",end=" ")
     print("\n")
 ```
+
+<br>
 
 ### When to use a `for` loop and when to use a `while` loop?
 Use `for` loop when you have a clear idea about how many times the loop will be iterated. On the other hand, use a `while` loop when you don't know how many times the loop will be iterated, but all you know is a condition that needs to be satisfied to continue the loop
