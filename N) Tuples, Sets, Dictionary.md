@@ -67,7 +67,7 @@ student['marks']['eng']   #85
 | Access value        | Returns value for key `"a"`              | `d["a"]`                 | `1`                                |
 | Modify/Add value    | Adds or updates key `"c"` with value `3` | `d["c"] = 3`             | `{'a': 1, 'b': 2, 'c': 3}`         |
 | Delete key          | Removes key `"a"`                        | `del d["a"]`             | `{'b': 2, 'c': 3}`                 |
-| Check key existence | Returns `True` if key exists             | `"a" in d`               | `True` or `False`                  |
+| Check key existence | Returns `True` if key exists             | `"a" in d`               | `True`                             |
 | Get with default    | Returns value or `0` if key not found    | `d.get("x", 0)`          | `0`                                |
 | Keys                | Returns all keys                         | `d.keys()`               | `dict_keys(['a', 'b'])`            |
 | Values              | Returns all values                       | `d.values()`             | `dict_values([1, 2])`              |
