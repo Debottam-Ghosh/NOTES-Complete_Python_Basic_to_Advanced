@@ -383,7 +383,9 @@ obj.show2()
 obj.show1()
 ```
 `Child_3`
+<br>
 `Parent_2`
+<br>
 `Grandparent_1`
 
 ### 
@@ -429,6 +431,7 @@ c1.show()
 c2.show()
 ```
 `Parent`
+<br>
 `Parent`
 ###
 ### 5. Hybrid Inheritance
@@ -474,5 +477,6 @@ class Dog(Animal):
 D=Dog('Bruno', 'Labrador')
 ```
 `Animal created: Bruno`
+<br>
 `Dog created: Bruno, Breed: Labrador`
 
