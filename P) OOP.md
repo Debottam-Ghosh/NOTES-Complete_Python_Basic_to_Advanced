@@ -336,9 +336,11 @@ class Dog(Animal):
 a = Dog()
 a.speak()  # Output: Dog barks (NOT Animal speaks)
 ```
-`Dog barks` (NOT Animal speaks because of method overriding)
+`Dog barks` &nbsp;&nbsp;&nbsp; (NOT Animal speaks because of method overriding)
+<br>
 Method Overriding is a type of **Polymorphism**. There are two more types of Polymorphism in general:
-1. Operator Overloding and <br> 2. Method Overloading (*doesn't exist for python but you can mimic the functionality by using default argumemt feature*)
+1. Operator Overloding 
+2. Method Overloading (*doesn't exist for python but you can mimic the functionality by using default argumemt feature*)
 
 #
 
