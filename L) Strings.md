@@ -27,8 +27,6 @@ print(str4)
 ```
 
 ## Accessing Substring from a String
-<br>
-
 ### 1. Indexing:
 There are two types of **indexing** in python:
 1. Positive Indexing
