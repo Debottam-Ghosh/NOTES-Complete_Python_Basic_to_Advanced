@@ -96,8 +96,8 @@ str1[2] = 'X'
 <br>
 
 ## Operators in Strings
+
 ### **Arithmatic Operators:**
-<br>
 
 #### 1. Concatenation
 ```bash
