@@ -1,3 +1,8 @@
+# Chapter 6: Type Conversion in Python
+
+<br>
+<br>
+
 ## Definition
 In python, we can convert a datatype to some other datatype very easily **until it is valid**
 
