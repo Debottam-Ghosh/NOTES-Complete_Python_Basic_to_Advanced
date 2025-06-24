@@ -231,5 +231,20 @@ The built-in functions (i,e., the functions are used for list, sets, tuples also
 | Does this action **belong to the object’s type**?                                | Use `object.method()`  |
 | Is this a **generic Python function** that can be applied to various data types? | Use `function(object)` |
 
+#
 
+## Coding Task
+### Convert a string into title case without using title()
+```bash
+s = "how are you?"
+l = s.split()
+L = []
+for i in l:
+    j = i.capitalize()
+    L.append(j)
+    
+S = " ".join(L)
+S
+```
+`How Are You?`
 
