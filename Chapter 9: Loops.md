@@ -178,6 +178,7 @@ for i in range(10,20):
         print('- break',end=' ')
 ```
 **Output:**
+```
  10 
  11 
  12 
@@ -187,7 +188,9 @@ for i in range(10,20):
  16 - pass 
  17 
  18 
- 19 
+ 19
+```
+
 **Explanation:**
 - At `i==13`, printing is skipped as `continue` skips everything after it for that iteration.
 - At `i==16`, printing happened as `pass` does nothing
