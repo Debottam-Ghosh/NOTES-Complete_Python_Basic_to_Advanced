@@ -73,29 +73,33 @@ for item in sequence:
 
 
 ### Simple Examples
+**1. Range Function:**
 ```
 for i in range(7):
     print(i,end=" ")
 ```
 `0 1 2 3 4 5 6 `
 
+**2. String:**
 ```
 for i in 'Python':
     print(i,end=" ")
 ```
 `P y t h o n`
 
+**3. Tuple:**
 ```
 for i in (3,5,7,10):
     print(i,end=" ")
 ```
 `3 5 7 10`
 
+**4. List:**
 ```
 for i in [1,3,9]:
     print(i,end=" ")
 ```
-1 3 9 
+`1 3 9 `
 
 ---
 
