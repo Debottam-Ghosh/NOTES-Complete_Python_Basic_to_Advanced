@@ -3,6 +3,7 @@ Loops are used to repeat a block of code multiple times.
 
 ## Types of Loops
 There are two types of loops in python:
+<br>
 **1. While** 
 <br>
 **2. For**
