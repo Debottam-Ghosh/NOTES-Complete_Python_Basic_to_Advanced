@@ -14,3 +14,24 @@
     -  If it said “too low,” you try a higher number.
     -  If it said “too high,” you try a lower number.
 - This continues until you guess the number correctly. And also it will show you the number of attempts.
+
+### Now Let's Code the Game:
+```bash
+import random
+cor_num = random.randint(1,100)
+
+num_attemp = 1
+guess = int(input(f"{num_attemp} |  Guess a number(1-100):"))
+
+while guess!=cor_num:
+    if guess<cor_num:
+        num_attemp+=1
+        guess = int(input(f"{num_attemp} |  Too low! Guess higher:"))        
+    elif guess>cor_num:
+        num_attemp+=1
+        guess = int(input(f"{num_attemp} |  Too high! Guess lower:"))
+                
+if guess==cor_num:
+    print("")
+    print(f"🎉 You have guessed correctly in {num_attemp} attempts!")
+```
