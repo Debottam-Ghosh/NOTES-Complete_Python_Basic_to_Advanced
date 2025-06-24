@@ -83,8 +83,10 @@
 - A **module** is a basic building block.
 - A **package** is a collection of modules.
 - A **library** is a bigger toolkit that can contain many packages and modules for broader functionality.
+# Some More Examples
+
 ## Enumerate()
-### Some More Examples
+
 ```bash
 l = ['a', 1, True, 'Python']
 enumerate(l)    
