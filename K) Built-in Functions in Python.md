@@ -1,3 +1,4 @@
+# 
 # Chapter 11: Built-in Functions in Python
 
 <br>
@@ -11,7 +12,7 @@
 | `str()`   | Convert to string  | `str(10)`       | `'10'`  |
 | `bool()`  | Convert to boolean | `bool(0)`       | `False` |
 
-<br>
+#
 
 ## **Functions used in sequences**
 | Function      | Purpose                        | Example                | Output     |
@@ -20,7 +21,7 @@
 | `enumerate()` | Get index and value in a loop  | `enumerate(['a','b'])` | `(0, 'a')` |
 | `zip()`       | Combine iterables element-wise | `zip([1,2],[3,4])`     | `(1,3)...` |
 
-<br>
+#
 
 ## **Math & Logic**
 | Function  | Purpose                     | Example           | Output |
@@ -32,7 +33,7 @@
 | `max()`   | Largest value               | `max(1, 5, -2)`   | `5`    |
 | `sum()`   | Sum of elements in **iterable** | `sum([1, 2, 3])`  | `6`    |
 
-<br>
+#
 
 ## **Data Structure Utilities**
 | Function     | Purpose                  | Example                 | Output          |
@@ -44,7 +45,7 @@
 | `set()`      | Convert to set (unique)  | `set([1,1,2])`          | `{1,2}`         |
 | `dict()`     | Create dictionary        | `dict(a=1, b=2)`        | `{'a':1,'b':2}` |
 
-<br>
+#
 
 ## **Evaluation and Introspection**
 | Function       | Purpose                       | Example              | Output            |
@@ -55,7 +56,7 @@
 | `eval()`       | Evaluate string as expression | `eval("2+3")`        | `5`               |
 | `input()`      | Get user input                | `input("Name: ")`    | (user input)      |
 
-<br>
+#
 
 ## **Others**
 | Function  | Purpose                          | Example            |
@@ -64,3 +65,67 @@
 | `dir()`   | List object’s attributes/methods | `dir([])`          |
 | `print()` | Output to screen                 | `print("Hello")`   |
 | `open()`  | Open a file                      | `open("file.txt")` |
+
+#
+## **Python: Modules vs Packages vs Libraries**
+| **Aspect**        | **Module**                                 | **Package**                                                    | **Library**                                                 |
+| ----------------- | ------------------------------------------ | -------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Definition**    | A single `.py` file containing Python code | A directory with an `__init__.py` file and one or more modules | A collection of modules and packages designed for a purpose |
+| **Structure**     | Single file                                | Folder with multiple files/modules                             | Bundle of packages, modules, resources, documentation       |
+| **Purpose**       | Organize reusable code in one file         | Organize multiple modules together                             | Provide tools to solve a specific set of problems           |
+| **Example**       | `math.py`, `random.py`                     | `numpy` (with submodules like `numpy.linalg`)                  | `Scikit-learn`, `TensorFlow`, `Keras`, `Pandas`             |
+| **Import Syntax** | `import module_name`                       | `import package.module`                                        | `import library_name` or specific parts (`from X import Y`) |
+| **Can Contain**   | Functions, variables, classes              | Modules, sub-packages                                          | Multiple packages and modules                               |
+| **File Type**     | `.py`                                      | Directory with `__init__.py`                                   | Mix of `.py`, compiled extensions, metadata, docs, etc.     |
+| **Example Use**   | `import math` → `math.sqrt(4)`             | `import os.path`                                               | `from sklearn.linear_model import LogisticRegression`       |
+#
+### **Summary:**
+- A **module** is a basic building block.
+- A **package** is a collection of modules.
+- A **library** is a bigger toolkit that can contain many packages and modules for broader functionality.
+## Enumerate()
+### Some More Examples
+```bash
+l = ['a', 1, True, 'Python']
+enumerate(l)    
+list(enumerate(l))
+
+#To see the enumerated list you have to use list(enumerate())
+```
+`[(0, 'a'), (1, 1), (2, True), (3, 'Python')]`
+## zip()
+```bash
+l1 = ['a', 1, True, 'Python']
+l2 = [False, 'coding', 5]
+l3 = [1,3,5,7,9,11]
+zip(l1,l2,l3)    
+list(zip(l1,l2,l3))
+
+#zip(l1,l2,l3,...) will create another list with length same as min(len(l1),len(l2),...)
+#To see the zipped list you have to use `list(zipped())`
+```
+`[('a', False, 1), (1, 'coding', 3), (True, 5, 5)]`
+## round()
+```bash
+print(round(3.4653433,2), end = ' ')  #round upto 2 decimal places
+print(round(3.7653433), end = ' ')    #rpund to nearest integer
+print(round(5))
+```
+`3.47 4 5`
+## max()
+```bash
+print(max([1,3,5]),end=' ') #-----> Valid     
+print(max((1,3,5)),end=' ') #-----> Valid
+print(max({1,3,5}),end=' ') #-----> Valid
+print(max(1,3,5),end=' ')   #-----> Valid     
+print(max('A','B','c'))   #max will be determined by ASCII code
+```
+`5 5 5 5 c`
+## sum()
+```bash
+print(sum([1,2,3]),end=' ') #-----> Valid
+print(sum((1,2,3)),end=' ') #-----> Valid
+print(sum({1,2,3}),end=' ') #-----> Valid
+#print(sum(1,2,3))  #-----> Not Valid
+```
+`6 6 6`
