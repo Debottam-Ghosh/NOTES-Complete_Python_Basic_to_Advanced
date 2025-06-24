@@ -1,3 +1,8 @@
+# Chapter 2: Comments in Python
+
+<br>
+<br>
+
 ## Definition
 Comments are notes in your code to explain what it does. Python **ignores them** during execution — they’re just for humans.
 
