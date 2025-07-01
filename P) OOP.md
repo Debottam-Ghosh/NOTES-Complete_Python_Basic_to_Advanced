@@ -67,7 +67,7 @@ p1.greet()
 | `__enter__` / `__exit__` | Context manager support (`with`)          | `with obj:`       |
 <br>
 
-## Creating a Class Function
+## Creating a Class `Fraction`
 ```bash
 from math import gcd
 
