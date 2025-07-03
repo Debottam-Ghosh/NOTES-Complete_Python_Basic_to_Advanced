@@ -57,7 +57,7 @@ MySchool=sqlite3.connect('schooltest.db')
 curschool=MySchool.cursor()
 
 # To add a new record to the table, we execute the INSERT query:
-curschool.execute("INSERT INTO student (StudentID, name, house, marks) VALUES (5,'Sherlock',32,50);")
+curschool.execute("INSERT INTO student (StudentID, name, marks) VALUES (5,'Sherlock',50);")
 
 # We now commit the changes to confirm them:
 MySchool.commit()
@@ -76,14 +76,13 @@ curschool=MySchool.cursor()
 # To accept user input, we use variables to store each of the values:
 mysid= int(input("Enter ID: "))
 myname=input("Enter name: ")
-myhouse=int(input("Enter house: "))
 mymarks=float(input("Enter marks: "))
 
-# We now replaces the fixed VALUES in the INSERT query with the variables, mysid, myname, myhouse and mymarks.
+# We now replaces the fixed VALUES in the INSERT query with the variables, mysid, myname, and mymarks.
 # To do this, we use the DB-API’s parameter substitution. We put a ? as a placeholder wherever we want to use a value.
 # Then give a tuple of values as the second argument to the cursor’s execute() method:
 '''
-curschool.execute("INSERT INTO student (StudentID, name, house, marks) VALUES (?,?,?,?);", (mysid,myname,myhouse,mymarks))
+curschool.execute("INSERT INTO student (StudentID, name, marks) VALUES (?,?,?,?);", (mysid,myname,mymarks))
 
 # We now commit the changes:
 MySchool.commit()
