@@ -18,7 +18,7 @@ The Python DB API (PEP 249) specifies **a standard way to connect to relational 
 ---
 
 ## Connection Methods & Creating a Database
-#### Key Concepts
+### Key Concepts
 | Component                   | Description                              |
 | --------------------------- | ---------------------------------------- |
 | `connect()`                 | Establishes a connection to the database |
@@ -32,7 +32,7 @@ The Python DB API (PEP 249) specifies **a standard way to connect to relational 
 <br>
 <br>
 
-#### Creating a database from Python 
+### Creating a database from Python 
 ```bash
 import sqlite3
 MySchool=sqlite3.connect('schooltest.db')
@@ -48,7 +48,7 @@ MySchool.close()
 <br>
 <br>
 
-#### Inserting New Record
+### Inserting New Record
 **Example 1: Inserting pre decided values in the table**
 ```bash
 # Assuming that the database MySchool is created and contains the table student, we start by creating a connection:
