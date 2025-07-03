@@ -79,7 +79,9 @@ myname=input("Enter name: ")
 myhouse=int(input("Enter house: "))
 mymarks=float(input("Enter marks: "))
 
-# We now replaces the fixed VALUES in the INSERT query with the variables, mysid, myname, myhouse and mymarks. To do this, we use the DB-API’s parameter substitution. We put a ? as a placeholder wherever we want to use a value and then give a tuple of values as the second argument to the cursor’s execute() method:
+# We now replaces the fixed VALUES in the INSERT query with the variables, mysid, myname, myhouse and mymarks.
+To do this, we use the DB-API’s parameter substitution. We put a ? as a placeholder wherever we want to use a value and
+then give a tuple of values as the second argument to the cursor’s execute() method:
 curschool.execute("INSERT INTO student (StudentID, name, house, marks) VALUES (?,?,?,?);", (mysid,myname,myhouse,mymarks))
 
 # We now commit the changes:
