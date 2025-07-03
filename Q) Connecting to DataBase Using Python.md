@@ -5,7 +5,7 @@
 <br>
 
 ## What is Python DB API?
-The Python DB API (PEP 249) is a standard interface for connecting to relational databases (like MySQL, PostgreSQL, SQLite, etc.) in Python.
+The Python DB API (PEP 249) specifies **a standard way to connect to relational databases **(like MySQL, PostgreSQL, SQLite, etc.) in Python.
 <br>
 
 #### What It Is:
