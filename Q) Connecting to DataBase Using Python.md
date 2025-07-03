@@ -82,7 +82,7 @@ mymarks=float(input("Enter marks: "))
 # To do this, we use the DB-API’s parameter substitution. We put a ? as a placeholder wherever we want to use a value.
 # Then give a tuple of values as the second argument to the cursor’s execute() method:
 '''
-curschool.execute("INSERT INTO student (StudentID, name, marks) VALUES (?,?,?,?);", (mysid,myname,mymarks))
+curschool.execute("INSERT INTO student (StudentID, name, marks) VALUES (?,?,?);", (mysid,myname,mymarks))
 
 # We now commit the changes:
 MySchool.commit()
@@ -104,13 +104,12 @@ MySchool=sqlite3.connect('schooltest.db')
         
 mysid= int(input("Enter ID: "))
 myname=input("Enter name: ")
-myhouse=int(input("Enter house: "))
 mymarks=float(input("Enter marks: "))
         
 #try block to catch exceptions
 try:
     curschool=MySchool.cursor()
-    curschool.execute("INSERT INTO student (StudentID, name, house, marks) VALUES (?,?,?,?)", (mysid, myname, myhouse, mymarks))
+    curschool.execute("INSERT INTO student (StudentID, name, marks) VALUES (?,?,?)", (mysid, myname, mymarks))
     MySchool.commit()
     print ("One record added successfully.")
     
