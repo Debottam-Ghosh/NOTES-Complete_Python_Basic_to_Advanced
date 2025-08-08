@@ -92,9 +92,9 @@ Num_1 = input("Enter the 1st number: ")
 Num_2 = input("Enter the 2nd number: ")
 print(Num_1 + Num_2)
 ```
-`Enter 1st number: ____________5͟_______________`
+`Enter 1st number: 5`
 <br>
-`Enter 2nd number: ____________6_______________`
+`Enter 2nd number: 6`
 <br>
 Output: `56`
 
