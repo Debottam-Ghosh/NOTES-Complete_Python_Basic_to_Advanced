@@ -21,7 +21,7 @@ Although list in python is very much similar to array in other languages but the
 <br>
 
 ## **How to Create a List**
-```bash
+```python
 # Empty list
 a = []
 
@@ -37,7 +37,7 @@ nested = [[1, 2], [3, 4]]
 <br>
 
 ## **Accessing List Elements**
-```bash
+```python
 my_list = [10, 20, 30, 40]
 
 # Indexing
@@ -49,12 +49,12 @@ print(my_list[1:3])   # [20, 30]
 print(my_list[:2])    # [10, 20]
 
 my_list_nested = [[1,2],3,[4,5]]
-print(my_list_nested[2][1])  # 6
+print(my_list_nested[2][1])  # 5
 ```
 <br>
 
 ## **Editing List Elements**
-```bash
+```python
 my_list[1] = 25
 print(my_list)  # [10, 25, 30, 40]
 ```
@@ -104,7 +104,7 @@ print(my_list)  # [10, 25, 30, 40]
 <br>
 
 ## **Looping Through a List**
-```bash
+```python
 fruits = ['apple', 'banana', 'cherry']
 
 for fruit in fruits:
@@ -120,7 +120,7 @@ for i, fruit in enumerate(fruits):
 #
 ## Coding Task
 ### Remove the duplicates from a given list
-```bash
+```python
 l = [1,3,2,4,1,5,2,4,1,2,5]
 L = []
 for i in l:
